@@ -1,0 +1,175 @@
+{
+  "phases": [
+    {
+      "id": 1,
+      "name": "Roots",
+      "description": "Letters, numbers, shapes & basic phonics",
+      "color": "#FF6B6B",
+      "domains": {
+        "reading": [
+          {
+            "id": "r1-01", "title": "Letter Recognition A-E", "standard": "CCSS.ELA-RF.K.1d",
+            "type": "multiple_choice", "xp": 10,
+            "questions": [
+              {"q": "Which letter is this? 👀 A", "options": ["A","B","C","D"], "answer": 0, "hint": "It looks like a mountain with a belt!"},
+              {"q": "Which letter is this? 👀 B", "options": ["D","B","P","R"], "answer": 1, "hint": "It has two bumps on the right side!"},
+              {"q": "Which letter is this? 👀 C", "options": ["G","O","C","D"], "answer": 2, "hint": "It looks like a half circle opening to the right!"},
+              {"q": "Which letter makes the sound 'duh'?", "options": ["B","F","D","T"], "answer": 2, "hint": "Think of the word DOG!"},
+              {"q": "Which letter starts the word EGG?", "options": ["A","E","I","O"], "answer": 1, "hint": "It looks like three horizontal lines!"}
+            ]
+          },
+          {
+            "id": "r1-02", "title": "Letter Recognition F-J", "standard": "CCSS.ELA-RF.K.1d",
+            "type": "multiple_choice", "xp": 10,
+            "questions": [
+              {"q": "Which letter starts the word FISH?", "options": ["E","F","V","P"], "answer": 1, "hint": "It looks like an E but missing the bottom line!"},
+              {"q": "Which letter is this? 👀 G", "options": ["C","G","O","Q"], "answer": 1, "hint": "It looks like a C with a little shelf inside!"},
+              {"q": "Which letter makes the sound 'huh'?", "options": ["N","H","K","Y"], "answer": 1, "hint": "Think of the word HAT!"},
+              {"q": "Which letter starts the word ICE?", "options": ["I","L","T","J"], "answer": 0, "hint": "It looks like a straight line with a dot!"},
+              {"q": "Which letter starts the word JAM?", "options": ["G","Y","J","I"], "answer": 2, "hint": "It looks like a hook at the bottom!"}
+            ]
+          },
+          {
+            "id": "r1-03", "title": "Short Vowel Sounds", "standard": "CCSS.ELA-RF.K.3b",
+            "type": "multiple_choice", "xp": 15,
+            "questions": [
+              {"q": "What vowel sound is in CAT? 🐱", "options": ["short a","short e","short i","short o"], "answer": 0, "hint": "Say it slowly: C-A-T. What's in the middle?"},
+              {"q": "What vowel sound is in BED? 🛏️", "options": ["short a","short e","short i","short o"], "answer": 1, "hint": "Say it slowly: B-E-D. What's in the middle?"},
+              {"q": "What vowel sound is in PIG? 🐷", "options": ["short a","short e","short i","short o"], "answer": 2, "hint": "Say it slowly: P-I-G. What's in the middle?"},
+              {"q": "What vowel sound is in DOG? 🐶", "options": ["short a","short e","short i","short o"], "answer": 3, "hint": "Say it slowly: D-O-G. What's in the middle?"},
+              {"q": "Which word has a short A sound?", "options": ["bike","sun","cap","pet"], "answer": 2, "hint": "Think: which word rhymes with MAP?"}
+            ]
+          },
+          {
+            "id": "r1-04", "title": "Sight Words Set 1", "standard": "CCSS.ELA-RF.K.3c",
+            "type": "multiple_choice", "xp": 15,
+            "questions": [
+              {"q": "Which word says THE?", "options": ["that","the","then","they"], "answer": 1, "hint": "It is only 3 letters: T-H-E"},
+              {"q": "Which word says AND?", "options": ["ant","end","and","any"], "answer": 2, "hint": "It sounds like a word that connects two things together!"},
+              {"q": "Which word says IS?", "options": ["it","in","is","if"], "answer": 2, "hint": "It is only 2 letters: I-S"},
+              {"q": "Which word says YOU?", "options": ["your","yow","yoo","you"], "answer": 3, "hint": "It is spelled Y-O-U"},
+              {"q": "Which word says SAID?", "options": ["sad","seed","said","sail"], "answer": 2, "hint": "It sounds like SED but is spelled differently!"}
+            ]
+          }
+        ],
+        "math": [
+          {
+            "id": "m1-01", "title": "Counting 1-10", "standard": "CCSS.MATH.K.CC.A.1",
+            "type": "multiple_choice", "xp": 10,
+            "questions": [
+              {"q": "How many apples? 🍎🍎🍎", "options": ["2","3","4","5"], "answer": 1, "hint": "Count each apple one at a time!"},
+              {"q": "How many stars? ⭐⭐⭐⭐⭐", "options": ["4","5","6","7"], "answer": 1, "hint": "Point to each star as you count!"},
+              {"q": "What number comes after 6?", "options": ["5","7","8","9"], "answer": 1, "hint": "Count up from 6... 6, then what?"},
+              {"q": "What number comes before 4?", "options": ["2","3","5","6"], "answer": 1, "hint": "Count up to 4: 1, 2, ?, 4"},
+              {"q": "How many 🐸🐸🐸🐸🐸🐸🐸?", "options": ["6","7","8","9"], "answer": 1, "hint": "Count them one by one!"}
+            ]
+          },
+          {
+            "id": "m1-02", "title": "Counting 11-20", "standard": "CCSS.MATH.K.CC.A.1",
+            "type": "multiple_choice", "xp": 10,
+            "questions": [
+              {"q": "What number comes after 13?", "options": ["12","14","15","16"], "answer": 1, "hint": "13, then...?"},
+              {"q": "What number comes after 19?", "options": ["18","20","21","17"], "answer": 1, "hint": "19 is almost at 20!"},
+              {"q": "How do you write the number fifteen?", "options": ["51","50","15","14"], "answer": 2, "hint": "Fifteen = 1 ten and 5 ones"},
+              {"q": "Which number is bigger: 14 or 17?", "options": ["14","17","they are equal","can not tell"], "answer": 1, "hint": "Count up from 14 to see which is further!"},
+              {"q": "What is 10 + 6?", "options": ["15","16","17","18"], "answer": 1, "hint": "Start at 10 and count up 6 more!"}
+            ]
+          },
+          {
+            "id": "m1-03", "title": "Simple Addition to 10", "standard": "CCSS.MATH.K.OA.A.2",
+            "type": "multiple_choice", "xp": 15,
+            "questions": [
+              {"q": "2 + 3 = ?", "options": ["4","5","6","7"], "answer": 1, "hint": "Hold up 2 fingers, then add 3 more!"},
+              {"q": "1 + 1 = ?", "options": ["1","2","3","4"], "answer": 1, "hint": "One apple plus one apple equals...?"},
+              {"q": "4 + 4 = ?", "options": ["6","7","8","9"], "answer": 2, "hint": "Count up from 4: 5, 6, 7, 8"},
+              {"q": "3 + 5 = ?", "options": ["7","8","9","10"], "answer": 1, "hint": "Start at 5 (the bigger number) and count up 3!"},
+              {"q": "6 + 3 = ?", "options": ["8","9","10","11"], "answer": 1, "hint": "Start at 6, count up 3 more!"}
+            ]
+          },
+          {
+            "id": "m1-04", "title": "Shapes & Patterns", "standard": "CCSS.MATH.K.G.A.2",
+            "type": "multiple_choice", "xp": 10,
+            "questions": [
+              {"q": "How many sides does a triangle have? 🔺", "options": ["2","3","4","5"], "answer": 1, "hint": "Count the straight lines on a triangle!"},
+              {"q": "What shape is a wheel? ⚙️", "options": ["square","triangle","circle","rectangle"], "answer": 2, "hint": "It is perfectly round!"},
+              {"q": "How many sides does a square have?", "options": ["3","4","5","6"], "answer": 1, "hint": "Count the sides of a window!"},
+              {"q": "What comes next? 🔴🔵🔴🔵🔴?", "options": ["🔴","🔵","🟢","🟡"], "answer": 1, "hint": "Look at the pattern: red, blue, red, blue..."},
+              {"q": "Which shape has 4 equal sides?", "options": ["rectangle","triangle","circle","square"], "answer": 3, "hint": "All four sides are the same length!"}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Sprouts",
+      "description": "Sight words, add/subtract to 20, sentences & fine motor precision",
+      "color": "#4ECDC4",
+      "domains": {
+        "reading": [
+          {
+            "id": "r2-01", "title": "Sight Words Set 2", "standard": "CCSS.ELA-RF.1.3g",
+            "type": "multiple_choice", "xp": 20,
+            "questions": [
+              {"q": "Which word says THEY?", "options": ["the","then","they","there"], "answer": 2, "hint": "T-H-E-Y"},
+              {"q": "Which word says BECAUSE?", "options": ["before","become","because","between"], "answer": 2, "hint": "It starts with BE and ends with CAUSE"},
+              {"q": "Which word says FRIEND?", "options": ["front","frown","friend","frame"], "answer": 2, "hint": "A friend is someone you like to play with!"},
+              {"q": "Which word says PEOPLE?", "options": ["purple","paper","people","pepper"], "answer": 2, "hint": "P-E-O-P-L-E"},
+              {"q": "Which word says COULD?", "options": ["cold","would","could","cloud"], "answer": 2, "hint": "It rhymes with WOULD and SHOULD!"}
+            ]
+          },
+          {
+            "id": "r2-02", "title": "Blending Sounds into Words", "standard": "CCSS.ELA-RF.1.2b",
+            "type": "multiple_choice", "xp": 20,
+            "questions": [
+              {"q": "Blend these sounds: /s/ /u/ /n/. What word?", "options": ["son","sun","sin","san"], "answer": 1, "hint": "It shines in the sky!"},
+              {"q": "Blend these sounds: /f/ /r/ /o/ /g/. What word?", "options": ["frag","frog","frug","from"], "answer": 1, "hint": "It is a green animal that jumps and says ribbit!"},
+              {"q": "Blend these sounds: /t/ /r/ /ee/. What word?", "options": ["try","tree","free","three"], "answer": 1, "hint": "It grows in the ground and has leaves!"},
+              {"q": "What is the first sound in SHIP?", "options": ["/s/","/sh/","/p/","/h/"], "answer": 1, "hint": "SH makes one special sound together!"},
+              {"q": "How many sounds in the word CAT?", "options": ["1","2","3","4"], "answer": 2, "hint": "C - A - T: count each sound!"}
+            ]
+          }
+        ],
+        "math": [
+          {
+            "id": "m2-01", "title": "Addition to 20", "standard": "CCSS.MATH.1.OA.C.6",
+            "type": "multiple_choice", "xp": 20,
+            "questions": [
+              {"q": "9 + 8 = ?", "options": ["16","17","18","15"], "answer": 1, "hint": "Start at 9, count up 8 more!"},
+              {"q": "7 + 6 = ?", "options": ["12","13","14","11"], "answer": 1, "hint": "Start at 7, count up 6!"},
+              {"q": "10 + 7 = ?", "options": ["16","17","18","15"], "answer": 1, "hint": "10 plus any number — just add the number after 10!"},
+              {"q": "5 + 9 = ?", "options": ["13","14","15","16"], "answer": 1, "hint": "Start at 9 (bigger number), count up 5!"},
+              {"q": "8 + 8 = ?", "options": ["14","15","16","17"], "answer": 2, "hint": "Double 8 — two groups of 8!"}
+            ]
+          },
+          {
+            "id": "m2-02", "title": "Subtraction to 10", "standard": "CCSS.MATH.1.OA.C.6",
+            "type": "multiple_choice", "xp": 20,
+            "questions": [
+              {"q": "5 - 2 = ?", "options": ["2","3","4","5"], "answer": 1, "hint": "Hold up 5 fingers and put down 2!"},
+              {"q": "8 - 3 = ?", "options": ["4","5","6","7"], "answer": 1, "hint": "Start at 8, count DOWN 3!"},
+              {"q": "10 - 4 = ?", "options": ["5","6","7","8"], "answer": 1, "hint": "Start at 10, count back 4!"},
+              {"q": "7 - 7 = ?", "options": ["0","1","7","14"], "answer": 0, "hint": "If you take away all of something, what is left?"},
+              {"q": "9 - 5 = ?", "options": ["3","4","5","6"], "answer": 1, "hint": "Start at 9, count back: 8,7,6,5,4!"}
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sightWords": {
+    "level1": ["the","and","is","you","said","it","in","was","he","she","I","a","to","do","go"],
+    "level2": ["they","because","friend","people","could","would","should","there","their","where","when","what","who","how","why"],
+    "level3": ["always","around","before","does","don't","fast","first","five","found","gave","goes","green","its","made","many"]
+  },
+  "motorMissions": [
+    {"after": "reading", "activity": "Hop on one foot for every letter in your name!", "icon": "🦘"},
+    {"after": "math", "activity": "Do jumping jacks equal to the biggest number you added today!", "icon": "⭐"},
+    {"after": "tracing", "activity": "Draw today's letter GIANT on paper or with chalk outside!", "icon": "✏️"},
+    {"after": "any", "activity": "Spin around 3 times then touch your nose!", "icon": "🌀"},
+    {"after": "any", "activity": "Crawl like a bear from one wall to the other!", "icon": "🐻"},
+    {"after": "any", "activity": "Balance on one foot and count to 10!", "icon": "🦩"},
+    {"after": "any", "activity": "Do 5 big arm circles forward and 5 backward!", "icon": "💪"},
+    {"after": "any", "activity": "March in place while you name 5 animals!", "icon": "🐘"}
+  ]
+}
