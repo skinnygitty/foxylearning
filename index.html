@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Foxy Learning Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <div style="font-weight:800;font-size:18px;white-space:nowrap">
+      🦊 Foxy Learning
+    </div>
+    <div class="xp-bar-wrap">
+      <div id="xp-bar"></div>
+    </div>
+    <div id="xp-label">⭐ Lv 1 | 0/100 XP</div>
+    <div id="focus-timer-wrap">
+      <div id="focus-ring">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+          <circle class="bg" cx="16" cy="16" r="14"></circle>
+          <circle id="focus-prog" class="prog" cx="16" cy="16" r="14"></circle>
+        </svg>
+      </div>
+      <span style="font-size:12px">Focus</span>
+    </div>
+  </div>
+
+  <div id="app">
+    <!-- SETUP (NAME) SCREEN -->
+    <div id="setup-screen" class="screen" style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;">
+      <!-- Filled by JS -->
+    </div>
+
+    <!-- HOME SCREEN -->
+    <div id="home-screen" class="screen">
+      <div class="hero">
+        <div id="mascot-home" style="font-size:100px;margin-bottom:10px;">🦊</div>
+        <h1>Hi, <span id="home-name">Superstar</span>! 👋</h1>
+        <p id="mascot-home-msg">Welcome to your learning adventure!</p>
+      </div>
+
+      <div class="home-grid">
+        <div class="home-card" onclick="showLearnScreen('reading')">
+          <span class="icon">📚</span>
+          <h3>Learning Journey</h3>
+          <p>Master reading and math, one fun level at a time.</p>
+        </div>
+        <div class="home-card" onclick="showMotorScreen()">
+          <span class="icon">✏️</span>
+          <h3>Builder's Workshop</h3>
+          <p>Games to boost hand control and fine motor skills.</p>
+        </div>
+        <div class="home-card" onclick="showBadgesScreen()">
+          <span class="icon">🏅</span>
+          <h3>Badge Wall</h3>
+          <p>See all the badges you’ve earned so far.</p>
+        </div>
+        <div class="home-card" onclick="showDashboard()">
+          <span class="icon">📊</span>
+          <h3>Grown‑Up View</h3>
+          <p>Check progress, confidence, and focus over time.</p>
+        </div>
+      </div>
+
+      <div class="card" style="max-width:900px;">
+        <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;">
+          <div>
+            <p><strong>Phase:</strong> <span id="home-phase">Phase 1</span></p>
+            <p><strong>Streak:</strong> <span id="home-streak">0</span> days</p>
+          </div>
+          <div>
+            <p><strong>Confidence:</strong> <span id="home-confidence">50%</span></p>
+            <p><strong>Focus Block:</strong> <span id="home-focus-block">8 min</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ASSESSMENT SCREEN -->
+    <div id="assessment-screen" class="screen">
+      <!-- Filled by Assessment.start() -->
+    </div>
+
+    <!-- LEARN SCREEN -->
+    <div id="learn-screen" class="screen">
+      <div class="card" id="phase-header"></div>
+      <div id="skill-tree-container"></div>
+      <div class="card" style="margin-top:16px;max-width:900px;">
+        <button class="btn btn-primary" onclick="goHome()">🏠 Back to Home</button>
+      </div>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div id="quiz-screen" class="screen">
+      <div class="quiz-header">
+        <h2 id="quiz-title">Lesson</h2>
+        <div class="quiz-progress">
+          <div id="quiz-prog-fill" class="quiz-progress-fill" style="width:0%;"></div>
+        </div>
+        <p style="font-size:16px;color:white;opacity:0.9;">Question <span id="quiz-count">1 / 5</span></p>
+      </div>
+
+      <div class="card question-card">
+        <div id="mascot-wrap">
+          <div id="quiz-mascot">🦊</div>
+          <div id="quiz-mascot-msg">You can do this! 💪</div>
+        </div>
+        <div id="quiz-question-area"></div>
+      </div>
+    </div>
+
+    <!-- MOTOR SCREEN -->
+    <div id="motor-screen" class="screen">
+      <div id="motor-content" style="width:100%;max-width:900px;margin:0 auto;padding:20px 0;">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+
+    <!-- BADGES SCREEN -->
+    <div id="badges-screen" class="screen">
+      <div class="card" style="max-width:900px;margin-top:20px;">
+        <h2 class="page-title" style="color:#6C63FF;">Badge Wall 🏅</h2>
+        <p style="font-size:16px;color:#636E72;margin-bottom:12px;">
+          Every badge shows hard work and persistence, not being “smart” or “behind”.
+        </p>
+        <p style="font-size:16px;color:#6C63FF;margin-bottom:12px;" id="badge-earned-count">
+          0 / 0 Earned
+        </p>
+        <div id="badge-grid" class="badge-grid"></div>
+        <button class="btn btn-primary mt-20" onclick="goHome()">🏠 Back to Home</button>
+      </div>
+    </div>
+
+    <!-- BREAK SCREEN -->
+    <div id="break-screen" class="screen">
+      <h2>Brain Break Time! 🧠</h2>
+      <div class="break-activity">
+        <span id="break-activity-icon">⭐</span>
+      </div>
+      <p id="break-activity-text" style="font-size:22px;margin-bottom:20px;">
+        Do 10 jumping jacks!
+      </p>
+      <div id="break-countdown">2:00</div>
+      <p style="margin-top:20px;font-size:18px;">
+        When the timer ends, we’ll go back to learning.
+      </p>
+    </div>
+
+    <!-- DASHBOARD SCREEN -->
+    <div id="dashboard-screen" class="screen">
+      <div class="card" style="max-width:900px;margin-top:20px;">
+        <h2 id="dash-name" class="page-title" style="color:#6C63FF;">Progress</h2>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-val" id="stat-level">1</div>
+            <div class="stat-label">Level</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-sessions">0</div>
+            <div class="stat-label">Sessions</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-minutes">0</div>
+            <div class="stat-label">Minutes Learned</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-streak">0 days</div>
+            <div class="stat-label">Streak</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-confidence">50%</div>
+            <div class="stat-label">Confidence</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-phase">Phase 1</div>
+            <div class="stat-label">Current Phase</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-badges">0</div>
+            <div class="stat-label">Badges</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-mastered">0</div>
+            <div class="stat-label">Skills Mastered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-focus">8 min</div>
+            <div class="stat-label">Focus Block</div>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-20" onclick="goHome()">🏠 Back to Home</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEEDBACK OVERLAY -->
+  <div id="feedback-overlay" class="feedback-overlay" style="display:none;">
+    <div id="feedback-text" class="feedback-text">⭐</div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/profile.js"></script>
+  <script src="js/gamification.js"></script>
+  <script src="js/focus.js"></script>
+  <script src="js/motor.js"></script>
+  <script src="js/assessment.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
